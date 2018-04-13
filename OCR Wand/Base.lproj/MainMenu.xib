@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="494" customClass="JFAppDelegate">
+            <connections>
+                <outlet property="aboutWindow" destination="6aa-W1-nI5" id="yfh-Mp-cjb"/>
+                <outlet property="enabledCB" destination="9Tv-pX-0b5" id="Fhj-wA-G7I"/>
+                <outlet property="iconView" destination="qBb-LU-vQf" id="L3R-5M-som"/>
+                <outlet property="prefWindow" destination="HWi-iB-Mhj" id="U83-Sa-cqD"/>
+                <outlet property="shortcutView" destination="tcR-ZZ-P6O" id="lQi-EM-tUP"/>
+                <outlet property="soundEffectCB" destination="dJV-fa-pfI" id="yOy-d3-mSi"/>
+                <outlet property="startupCB" destination="j3u-sP-bhX" id="tUL-bM-Etg"/>
+                <outlet property="statusMenu" destination="zws-gl-l3h" id="YwD-xA-H9b"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+        <menu id="zws-gl-l3h">
+            <items>
+                <menuItem title="Preferences..." id="YsX-Jy-pC5">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showPreferences:" target="494" id="aVZ-1X-Xfh"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="vDt-n6-cUh"/>
+                <menuItem title="About" id="hsk-eR-uMz">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showAbout:" target="494" id="dYv-E1-FfB"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit OCR Wand" id="Rb1-sy-Pu9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-1" id="ofK-WT-LeW"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="OCR Wand Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="HWi-iB-Mhj">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="1162" y="574" width="285" height="132"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="cdq-eZ-r7C">
+                <rect key="frame" x="0.0" y="0.0" width="285" height="132"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcR-ZZ-P6O" customClass="MASShortcutView">
+                        <rect key="frame" x="85" y="93" width="180" height="19"/>
+                    </customView>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3u-sP-bhX">
+                        <rect key="frame" x="18" y="43" width="121" height="18"/>
+                        <buttonCell key="cell" type="check" title="Open at startup" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="uYX-od-rwH">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleStartupCB:" target="494" id="N1m-b2-bZ1"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Tv-pX-0b5">
+                        <rect key="frame" x="18" y="69" width="72" height="18"/>
+                        <buttonCell key="cell" type="check" title="Enabled" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="MY8-QX-Poh">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleEnabledCB:" target="494" id="ASl-pt-gZ9"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJV-fa-pfI">
+                        <rect key="frame" x="18" y="17" width="101" height="18"/>
+                        <buttonCell key="cell" type="check" title="Sound effect" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="PlQ-Aa-L8L">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleSoundEffectCB:" target="494" id="y51-R7-0rP"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4K-kU-FWF">
+                        <rect key="frame" x="18" y="95" width="61" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Shortcut:" id="rjr-mE-1kz">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="OCR Wand" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="6aa-W1-nI5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="307"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="xZa-m3-NX2">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="307"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBb-LU-vQf">
+                        <rect key="frame" x="190" y="198" width="101" height="101"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="YBZ-43-fLy"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="84r-Nw-yB3">
+                        <rect key="frame" x="20" y="14" width="444" height="175"/>
+                        <textFieldCell key="cell" allowsUndo="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" allowsEditingTextAttributes="YES" id="lf3-v2-f1z">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">OCR Wand is a utility to make optical character recognition quick and easy. Simply choose the shortcut you prefer in the preferences, then click and drag around the section you wish to recognize. The text copied to the clipboard can be viewed in the status bar menu.
+
+Text edited in the menu is then reinserted into the clipboard.
+
+For best results, make sure you select only the text you wish to read.
+
+© 2013 James Fator</string>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+</document>

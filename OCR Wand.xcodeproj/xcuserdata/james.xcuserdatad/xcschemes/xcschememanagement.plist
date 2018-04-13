@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>OCR Wand Helper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>OCR Wand Release.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>OCR Wand.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1A9B4AB818667F28003E8E95</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1A9B4AD218667F28003E8E95</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1AE787B418399A8200957F20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1AE787D518399A8200957F20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

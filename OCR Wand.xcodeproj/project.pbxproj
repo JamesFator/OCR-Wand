@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0B60A71858C92300EE6F8F /* OCRWandStatusIconAlert.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B60A61858C92300EE6F8F /* OCRWandStatusIconAlert.tiff */; };
+		1A0B60AD1858D21900EE6F8F /* JFPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B60AB1858D21900EE6F8F /* JFPopoverController.m */; };
+		1A0B60AE1858D21900EE6F8F /* JFPopoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B60AC1858D21900EE6F8F /* JFPopoverController.xib */; };
+		1A0C924E1A275F4A00DD557E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE787BD18399A8200957F20 /* Foundation.framework */; };
+		1A0C924F1A275FB700DD557E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE787BD18399A8200957F20 /* Foundation.framework */; };
+		1A37C9F0184F184100ED3C6C /* OCRWandDisplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A37C9EF184F184100ED3C6C /* OCRWandDisplay.png */; };
+		1A37C9F2184F1EE400ED3C6C /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A37C9F1184F1EE400ED3C6C /* ServiceManagement.framework */; };
+		1A77E04518442E220092046C /* JFDetectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A77E04418442E220092046C /* JFDetectWindow.m */; };
+		1A77E04A1844347E0092046C /* Leptonica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77E0461844347E0092046C /* Leptonica.framework */; };
+		1A77E04B1844347E0092046C /* libjpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77E0471844347E0092046C /* libjpeg.framework */; };
+		1A77E04C1844347E0092046C /* libtiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77E0481844347E0092046C /* libtiff.framework */; };
+		1A77E04D1844347E0092046C /* Tesseract.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77E0491844347E0092046C /* Tesseract.framework */; };
+		1A77E050184435480092046C /* RecognitionManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A77E04F184435480092046C /* RecognitionManager.mm */; };
+		1A77E052184435B60092046C /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 1A77E051184435B60092046C /* tessdata */; };
+		1A77E054184437070092046C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77E053184437070092046C /* libz.dylib */; };
+		1A77E0581844398E0092046C /* Leptonica.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A77E0461844347E0092046C /* Leptonica.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1A77E0591844398E0092046C /* libjpeg.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A77E0471844347E0092046C /* libjpeg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1A77E05A1844398E0092046C /* libtiff.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A77E0481844347E0092046C /* libtiff.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1A77E05B1844398E0092046C /* Tesseract.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A77E0491844347E0092046C /* Tesseract.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1A77E05C184439BA0092046C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE787CD18399A8200957F20 /* MainMenu.xib */; };
+		1A77E06018443D4D0092046C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77E05F18443D4D0092046C /* ImageIO.framework */; };
+		1A77E06218443D540092046C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77E06118443D540092046C /* CoreServices.framework */; };
+		1A77E0651844B78B0092046C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77E0641844B78B0092046C /* QuartzCore.framework */; };
+		1A7BBA8B1854177A00CCF6E5 /* Tesseract License in Resources */ = {isa = PBXBuildFile; fileRef = 1A7BBA8A1854177A00CCF6E5 /* Tesseract License */; };
+		1A9B4ABA18667F28003E8E95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE787B818399A8200957F20 /* Cocoa.framework */; };
+		1A9B4AC218667F28003E8E95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9B4AC118667F28003E8E95 /* main.m */; };
+		1A9B4AE818667FBF003E8E95 /* OCR Wand Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A9B4AB918667F28003E8E95 /* OCR Wand Helper.app */; };
+		1A9B4AEB18668002003E8E95 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9B4AEA18668002003E8E95 /* StartAtLoginController.m */; };
+		1A9F262E184ED333003EB679 /* OCRWand.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F262D184ED333003EB679 /* OCRWand.icns */; };
+		1A9F2643184EE4B0003EB679 /* OCRWandStatusIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F2642184EE4B0003EB679 /* OCRWandStatusIcon.tiff */; };
+		1AE787B918399A8200957F20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE787B818399A8200957F20 /* Cocoa.framework */; };
+		1AE787C318399A8200957F20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AE787C118399A8200957F20 /* InfoPlist.strings */; };
+		1AE787C518399A8200957F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE787C418399A8200957F20 /* main.m */; };
+		1AE787CC18399A8200957F20 /* JFAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AE787CB18399A8200957F20 /* JFAppDelegate.mm */; };
+		1AE787F718399ABB00957F20 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE787EE18399ABB00957F20 /* MASShortcut.m */; };
+		1AE787F818399ABB00957F20 /* MASShortcut+Monitoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE787F018399ABB00957F20 /* MASShortcut+Monitoring.m */; };
+		1AE787F918399ABB00957F20 /* MASShortcut+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE787F218399ABB00957F20 /* MASShortcut+UserDefaults.m */; };
+		1AE787FA18399ABB00957F20 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE787F418399ABB00957F20 /* MASShortcutView.m */; };
+		1AE787FB18399ABB00957F20 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE787F618399ABB00957F20 /* MASShortcutView+UserDefaults.m */; };
+		1AE787FD18399AD300957F20 /* MASShortcut License in Resources */ = {isa = PBXBuildFile; fileRef = 1AE787FC18399AD300957F20 /* MASShortcut License */; };
+		1AE787FF18399B6900957F20 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE787FE18399B6900957F20 /* Carbon.framework */; };
+		1AF145AE18441A9D00947795 /* JFDetectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF145AD18441A9D00947795 /* JFDetectView.m */; };
+		1AF145B118441BE200947795 /* JFSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF145B018441BE200947795 /* JFSelectionView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A77E057184439740092046C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A77E0581844398E0092046C /* Leptonica.framework in CopyFiles */,
+				1A77E0591844398E0092046C /* libjpeg.framework in CopyFiles */,
+				1A77E05A1844398E0092046C /* libtiff.framework in CopyFiles */,
+				1A77E05B1844398E0092046C /* Tesseract.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A9B4AE718667F8E003E8E95 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				1A9B4AE818667FBF003E8E95 /* OCR Wand Helper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A0B60A61858C92300EE6F8F /* OCRWandStatusIconAlert.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = OCRWandStatusIconAlert.tiff; sourceTree = "<group>"; };
+		1A0B60AA1858D21900EE6F8F /* JFPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPopoverController.h; sourceTree = "<group>"; };
+		1A0B60AB1858D21900EE6F8F /* JFPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPopoverController.m; sourceTree = "<group>"; };
+		1A0B60AC1858D21900EE6F8F /* JFPopoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFPopoverController.xib; sourceTree = "<group>"; };
+		1A37C9EF184F184100ED3C6C /* OCRWandDisplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OCRWandDisplay.png; sourceTree = "<group>"; };
+		1A37C9F1184F1EE400ED3C6C /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		1A385F6D1866F37700E9BF80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1A77E04318442E220092046C /* JFDetectWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFDetectWindow.h; sourceTree = "<group>"; };
+		1A77E04418442E220092046C /* JFDetectWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFDetectWindow.m; sourceTree = "<group>"; };
+		1A77E0461844347E0092046C /* Leptonica.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Leptonica.framework; sourceTree = "<group>"; };
+		1A77E0471844347E0092046C /* libjpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libjpeg.framework; sourceTree = "<group>"; };
+		1A77E0481844347E0092046C /* libtiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtiff.framework; sourceTree = "<group>"; };
+		1A77E0491844347E0092046C /* Tesseract.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tesseract.framework; sourceTree = "<group>"; };
+		1A77E04E184435480092046C /* RecognitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognitionManager.h; sourceTree = "<group>"; };
+		1A77E04F184435480092046C /* RecognitionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RecognitionManager.mm; sourceTree = "<group>"; };
+		1A77E051184435B60092046C /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		1A77E053184437070092046C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1A77E05F18443D4D0092046C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		1A77E06118443D540092046C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		1A77E0631844B68F0092046C /* NSImage+Grayscale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Grayscale.h"; sourceTree = "<group>"; };
+		1A77E0641844B78B0092046C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1A7BBA8A1854177A00CCF6E5 /* Tesseract License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tesseract License"; sourceTree = "<group>"; };
+		1A7EC5EC1854417400F93122 /* OCR Wand.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "OCR Wand.entitlements"; sourceTree = "<group>"; };
+		1A9B4AB918667F28003E8E95 /* OCR Wand Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR Wand Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9B4ABD18667F28003E8E95 /* OCR Wand Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCR Wand Helper-Info.plist"; sourceTree = "<group>"; };
+		1A9B4AC118667F28003E8E95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A9B4AC318667F28003E8E95 /* OCR Wand Helper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCR Wand Helper-Prefix.pch"; sourceTree = "<group>"; };
+		1A9B4AE618667F42003E8E95 /* OCR Wand Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "OCR Wand Helper.entitlements"; sourceTree = "<group>"; };
+		1A9B4AE918668002003E8E95 /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
+		1A9B4AEA18668002003E8E95 /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAtLoginController.m; sourceTree = "<group>"; };
+		1A9F262D184ED333003EB679 /* OCRWand.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = OCRWand.icns; path = Resources/OCRWand.icns; sourceTree = SOURCE_ROOT; };
+		1A9F2642184EE4B0003EB679 /* OCRWandStatusIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = OCRWandStatusIcon.tiff; sourceTree = "<group>"; };
+		1AE787B518399A8200957F20 /* OCR Wand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR Wand.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE787B818399A8200957F20 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1AE787BB18399A8200957F20 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1AE787BC18399A8200957F20 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1AE787BD18399A8200957F20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1AE787C018399A8200957F20 /* OCR Wand-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCR Wand-Info.plist"; sourceTree = "<group>"; };
+		1AE787C218399A8200957F20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AE787C418399A8200957F20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AE787C618399A8200957F20 /* OCR Wand-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCR Wand-Prefix.pch"; sourceTree = "<group>"; };
+		1AE787CA18399A8200957F20 /* JFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFAppDelegate.h; sourceTree = "<group>"; };
+		1AE787CB18399A8200957F20 /* JFAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = JFAppDelegate.mm; sourceTree = "<group>"; };
+		1AE787CE18399A8200957F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1AE787D718399A8200957F20 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1AE787ED18399ABB00957F20 /* MASShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcut.h; sourceTree = "<group>"; };
+		1AE787EE18399ABB00957F20 /* MASShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcut.m; sourceTree = "<group>"; };
+		1AE787EF18399ABB00957F20 /* MASShortcut+Monitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+Monitoring.h"; sourceTree = "<group>"; };
+		1AE787F018399ABB00957F20 /* MASShortcut+Monitoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+Monitoring.m"; sourceTree = "<group>"; };
+		1AE787F118399ABB00957F20 /* MASShortcut+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+UserDefaults.h"; sourceTree = "<group>"; };
+		1AE787F218399ABB00957F20 /* MASShortcut+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+UserDefaults.m"; sourceTree = "<group>"; };
+		1AE787F318399ABB00957F20 /* MASShortcutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutView.h; sourceTree = "<group>"; };
+		1AE787F418399ABB00957F20 /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutView.m; sourceTree = "<group>"; };
+		1AE787F518399ABB00957F20 /* MASShortcutView+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcutView+UserDefaults.h"; sourceTree = "<group>"; };
+		1AE787F618399ABB00957F20 /* MASShortcutView+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcutView+UserDefaults.m"; sourceTree = "<group>"; };
+		1AE787FC18399AD300957F20 /* MASShortcut License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MASShortcut License"; sourceTree = "<group>"; };
+		1AE787FE18399B6900957F20 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		1AF145AC18441A9D00947795 /* JFDetectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFDetectView.h; sourceTree = "<group>"; };
+		1AF145AD18441A9D00947795 /* JFDetectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFDetectView.m; sourceTree = "<group>"; };
+		1AF145AF18441BE200947795 /* JFSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSelectionView.h; sourceTree = "<group>"; };
+		1AF145B018441BE200947795 /* JFSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSelectionView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A9B4AB618667F28003E8E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0C924E1A275F4A00DD557E /* Foundation.framework in Frameworks */,
+				1A9B4ABA18667F28003E8E95 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE787B218399A8200957F20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0C924F1A275FB700DD557E /* Foundation.framework in Frameworks */,
+				1A37C9F2184F1EE400ED3C6C /* ServiceManagement.framework in Frameworks */,
+				1A77E0651844B78B0092046C /* QuartzCore.framework in Frameworks */,
+				1A77E06218443D540092046C /* CoreServices.framework in Frameworks */,
+				1A77E06018443D4D0092046C /* ImageIO.framework in Frameworks */,
+				1A77E054184437070092046C /* libz.dylib in Frameworks */,
+				1AE787FF18399B6900957F20 /* Carbon.framework in Frameworks */,
+				1A77E04A1844347E0092046C /* Leptonica.framework in Frameworks */,
+				1A77E04B1844347E0092046C /* libjpeg.framework in Frameworks */,
+				1A77E04D1844347E0092046C /* Tesseract.framework in Frameworks */,
+				1A77E04C1844347E0092046C /* libtiff.framework in Frameworks */,
+				1AE787B918399A8200957F20 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A9B4ABB18667F28003E8E95 /* OCR Wand Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1A9B4AE618667F42003E8E95 /* OCR Wand Helper.entitlements */,
+				1A9B4ABC18667F28003E8E95 /* Supporting Files */,
+			);
+			path = "OCR Wand Helper";
+			sourceTree = "<group>";
+		};
+		1A9B4ABC18667F28003E8E95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A9B4ABD18667F28003E8E95 /* OCR Wand Helper-Info.plist */,
+				1A9B4AC118667F28003E8E95 /* main.m */,
+				1A9B4AC318667F28003E8E95 /* OCR Wand Helper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AE787AC18399A8200957F20 = {
+			isa = PBXGroup;
+			children = (
+				1AE787EC18399A9D00957F20 /* MASShortcut */,
+				1AE787BE18399A8200957F20 /* OCR Wand */,
+				1A9B4ABB18667F28003E8E95 /* OCR Wand Helper */,
+				1AE787B718399A8200957F20 /* Frameworks */,
+				1AE787B618399A8200957F20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AE787B618399A8200957F20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AE787B518399A8200957F20 /* OCR Wand.app */,
+				1A9B4AB918667F28003E8E95 /* OCR Wand Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AE787B718399A8200957F20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A385F6D1866F37700E9BF80 /* Foundation.framework */,
+				1A37C9F1184F1EE400ED3C6C /* ServiceManagement.framework */,
+				1A77E0641844B78B0092046C /* QuartzCore.framework */,
+				1A77E06118443D540092046C /* CoreServices.framework */,
+				1A77E05F18443D4D0092046C /* ImageIO.framework */,
+				1A77E053184437070092046C /* libz.dylib */,
+				1A77E0461844347E0092046C /* Leptonica.framework */,
+				1A77E0471844347E0092046C /* libjpeg.framework */,
+				1A77E0481844347E0092046C /* libtiff.framework */,
+				1A77E0491844347E0092046C /* Tesseract.framework */,
+				1AE787FE18399B6900957F20 /* Carbon.framework */,
+				1AE787B818399A8200957F20 /* Cocoa.framework */,
+				1AE787D718399A8200957F20 /* XCTest.framework */,
+				1AE787BA18399A8200957F20 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AE787BA18399A8200957F20 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AE787BB18399A8200957F20 /* AppKit.framework */,
+				1AE787BC18399A8200957F20 /* CoreData.framework */,
+				1AE787BD18399A8200957F20 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1AE787BE18399A8200957F20 /* OCR Wand */ = {
+			isa = PBXGroup;
+			children = (
+				1AE787BF18399A8200957F20 /* Supporting Files */,
+				1AE787CA18399A8200957F20 /* JFAppDelegate.h */,
+				1AE787CB18399A8200957F20 /* JFAppDelegate.mm */,
+				1AE787CD18399A8200957F20 /* MainMenu.xib */,
+				1A77E051184435B60092046C /* tessdata */,
+				1A0B60AA1858D21900EE6F8F /* JFPopoverController.h */,
+				1A0B60AB1858D21900EE6F8F /* JFPopoverController.m */,
+				1A0B60AC1858D21900EE6F8F /* JFPopoverController.xib */,
+				1AF61AB61866ED980090FD23 /* Detection */,
+				1AF61AB51866ED900090FD23 /* Login Controller */,
+			);
+			path = "OCR Wand";
+			sourceTree = "<group>";
+		};
+		1AE787BF18399A8200957F20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A7EC5EC1854417400F93122 /* OCR Wand.entitlements */,
+				1A0B60A61858C92300EE6F8F /* OCRWandStatusIconAlert.tiff */,
+				1A37C9EF184F184100ED3C6C /* OCRWandDisplay.png */,
+				1A9F2642184EE4B0003EB679 /* OCRWandStatusIcon.tiff */,
+				1A9F262D184ED333003EB679 /* OCRWand.icns */,
+				1AE787FC18399AD300957F20 /* MASShortcut License */,
+				1AE787C018399A8200957F20 /* OCR Wand-Info.plist */,
+				1AE787C118399A8200957F20 /* InfoPlist.strings */,
+				1AE787C418399A8200957F20 /* main.m */,
+				1AE787C618399A8200957F20 /* OCR Wand-Prefix.pch */,
+				1A7BBA8A1854177A00CCF6E5 /* Tesseract License */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AE787EC18399A9D00957F20 /* MASShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				1AE787ED18399ABB00957F20 /* MASShortcut.h */,
+				1AE787EE18399ABB00957F20 /* MASShortcut.m */,
+				1AE787EF18399ABB00957F20 /* MASShortcut+Monitoring.h */,
+				1AE787F018399ABB00957F20 /* MASShortcut+Monitoring.m */,
+				1AE787F118399ABB00957F20 /* MASShortcut+UserDefaults.h */,
+				1AE787F218399ABB00957F20 /* MASShortcut+UserDefaults.m */,
+				1AE787F318399ABB00957F20 /* MASShortcutView.h */,
+				1AE787F418399ABB00957F20 /* MASShortcutView.m */,
+				1AE787F518399ABB00957F20 /* MASShortcutView+UserDefaults.h */,
+				1AE787F618399ABB00957F20 /* MASShortcutView+UserDefaults.m */,
+			);
+			path = MASShortcut;
+			sourceTree = "<group>";
+		};
+		1AF61AB51866ED900090FD23 /* Login Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A9B4AE918668002003E8E95 /* StartAtLoginController.h */,
+				1A9B4AEA18668002003E8E95 /* StartAtLoginController.m */,
+			);
+			name = "Login Controller";
+			sourceTree = "<group>";
+		};
+		1AF61AB61866ED980090FD23 /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				1AF145AC18441A9D00947795 /* JFDetectView.h */,
+				1AF145AD18441A9D00947795 /* JFDetectView.m */,
+				1AF145AF18441BE200947795 /* JFSelectionView.h */,
+				1AF145B018441BE200947795 /* JFSelectionView.m */,
+				1A77E04318442E220092046C /* JFDetectWindow.h */,
+				1A77E04418442E220092046C /* JFDetectWindow.m */,
+				1A77E04E184435480092046C /* RecognitionManager.h */,
+				1A77E04F184435480092046C /* RecognitionManager.mm */,
+				1A77E0631844B68F0092046C /* NSImage+Grayscale.h */,
+			);
+			name = Detection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A9B4AB818667F28003E8E95 /* OCR Wand Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9B4AE418667F28003E8E95 /* Build configuration list for PBXNativeTarget "OCR Wand Helper" */;
+			buildPhases = (
+				1A9B4AB518667F28003E8E95 /* Sources */,
+				1A9B4AB618667F28003E8E95 /* Frameworks */,
+				1A9B4AB718667F28003E8E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OCR Wand Helper";
+			productName = "OCR Wand Helper";
+			productReference = 1A9B4AB918667F28003E8E95 /* OCR Wand Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AE787B418399A8200957F20 /* OCR Wand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AE787E618399A8200957F20 /* Build configuration list for PBXNativeTarget "OCR Wand" */;
+			buildPhases = (
+				1AE787B118399A8200957F20 /* Sources */,
+				1AE787B218399A8200957F20 /* Frameworks */,
+				1AE787B318399A8200957F20 /* Resources */,
+				1A77E057184439740092046C /* CopyFiles */,
+				1A9B4AE718667F8E003E8E95 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OCR Wand";
+			productName = "OCR Wand";
+			productReference = 1AE787B518399A8200957F20 /* OCR Wand.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AE787AD18399A8200957F20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JF;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = JamesFator;
+				TargetAttributes = {
+					1A9B4AB818667F28003E8E95 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					1AE787B418399A8200957F20 = {
+						DevelopmentTeam = W254R8M4X7;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1AE787B018399A8200957F20 /* Build configuration list for PBXProject "OCR Wand" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AE787AC18399A8200957F20;
+			productRefGroup = 1AE787B618399A8200957F20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AE787B418399A8200957F20 /* OCR Wand */,
+				1A9B4AB818667F28003E8E95 /* OCR Wand Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A9B4AB718667F28003E8E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE787B318399A8200957F20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A37C9F0184F184100ED3C6C /* OCRWandDisplay.png in Resources */,
+				1A0B60A71858C92300EE6F8F /* OCRWandStatusIconAlert.tiff in Resources */,
+				1A9F2643184EE4B0003EB679 /* OCRWandStatusIcon.tiff in Resources */,
+				1A7BBA8B1854177A00CCF6E5 /* Tesseract License in Resources */,
+				1A0B60AE1858D21900EE6F8F /* JFPopoverController.xib in Resources */,
+				1A77E05C184439BA0092046C /* MainMenu.xib in Resources */,
+				1AE787C318399A8200957F20 /* InfoPlist.strings in Resources */,
+				1A77E052184435B60092046C /* tessdata in Resources */,
+				1AE787FD18399AD300957F20 /* MASShortcut License in Resources */,
+				1A9F262E184ED333003EB679 /* OCRWand.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A9B4AB518667F28003E8E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9B4AC218667F28003E8E95 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE787B118399A8200957F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE787CC18399A8200957F20 /* JFAppDelegate.mm in Sources */,
+				1AE787F818399ABB00957F20 /* MASShortcut+Monitoring.m in Sources */,
+				1A77E04518442E220092046C /* JFDetectWindow.m in Sources */,
+				1AE787FA18399ABB00957F20 /* MASShortcutView.m in Sources */,
+				1AE787C518399A8200957F20 /* main.m in Sources */,
+				1A9B4AEB18668002003E8E95 /* StartAtLoginController.m in Sources */,
+				1AE787FB18399ABB00957F20 /* MASShortcutView+UserDefaults.m in Sources */,
+				1AF145AE18441A9D00947795 /* JFDetectView.m in Sources */,
+				1A77E050184435480092046C /* RecognitionManager.mm in Sources */,
+				1AE787F918399ABB00957F20 /* MASShortcut+UserDefaults.m in Sources */,
+				1AE787F718399ABB00957F20 /* MASShortcut.m in Sources */,
+				1AF145B118441BE200947795 /* JFSelectionView.m in Sources */,
+				1A0B60AD1858D21900EE6F8F /* JFPopoverController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1AE787C118399A8200957F20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AE787C218399A8200957F20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1AE787CD18399A8200957F20 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AE787CE18399A8200957F20 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A9B4AE018667F28003E8E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OCR Wand Helper/OCR Wand Helper.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCR Wand Helper/OCR Wand Helper-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OCR Wand Helper/OCR Wand Helper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A9B4AE118667F28003E8E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OCR Wand Helper/OCR Wand Helper.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCR Wand Helper/OCR Wand Helper-Prefix.pch";
+				INFOPLIST_FILE = "OCR Wand Helper/OCR Wand Helper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1AE787E418399A8200957F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1AE787E518399A8200957F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1AE787E718399A8200957F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "OCR Wand/OCR Wand.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCR Wand/OCR Wand-Prefix.pch";
+				INFOPLIST_FILE = "OCR Wand/OCR Wand-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1AE787E818399A8200957F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "OCR Wand/OCR Wand.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCR Wand/OCR Wand-Prefix.pch";
+				INFOPLIST_FILE = "OCR Wand/OCR Wand-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A9B4AE418667F28003E8E95 /* Build configuration list for PBXNativeTarget "OCR Wand Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9B4AE018667F28003E8E95 /* Debug */,
+				1A9B4AE118667F28003E8E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AE787B018399A8200957F20 /* Build configuration list for PBXProject "OCR Wand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE787E418399A8200957F20 /* Debug */,
+				1AE787E518399A8200957F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AE787E618399A8200957F20 /* Build configuration list for PBXNativeTarget "OCR Wand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE787E718399A8200957F20 /* Debug */,
+				1AE787E818399A8200957F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AE787AD18399A8200957F20 /* Project object */;
+}
